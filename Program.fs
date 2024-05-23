@@ -45,7 +45,7 @@ let main args =
     let dog = "Barney"
     let cat = "Whiskers"
     logger.Log(LogLevel.Information, "1 Hello {dog} & {cat}!", dog, cat)
-    let msgArgs = [| dog; cat |]
-    // let msgArgs: Object[] = [| dog; cat |]
+    //let msgArgs = [| dog; cat |]
+    let msgArgs: Object[] = [| dog; cat |]
     logger.Log(LogLevel.Information, "2 Hello {dog} & {cat}!", msgArgs)
     0
